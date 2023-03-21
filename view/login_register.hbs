@@ -12,6 +12,7 @@
       form {
         width: 50%;
         margin: auto;
+        margin-bottom: 10px;
         background-color: #fff;
         padding: 20px;
         box-shadow: 0px 0px 10px #ccc;
@@ -67,7 +68,15 @@
         <input type="text" placeholder="Enter Username" name="username" required>
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
+        {{#if mesg}}
+        <h6>Wrong username or password</h6>
+        {{/if}}
+        {{#if mesg1}}
+        <h6>Wrong username or password</h6>
+        {{/if}}
         <input type="submit" value="Login">
+        <p><a href="">forget password(coming soon)</a></p>
+        
       </div>
     </form>
     <form action="/register" >
@@ -82,6 +91,9 @@
         <input type="text" placeholder="Enter Username" name="username" required>
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" id="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{4,16}$" title="Password must be 4 to 16 characters long and contain at least one special character and one number" required>
+        {{#if mesg2}}
+        <h6>User already exist</h6>
+        {{/if}}
         <input type="submit" value="Register">
       </div>
     </form>

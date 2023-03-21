@@ -3,7 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>My Home Page</title>
-  <link rel="stylesheet" href="style.css">
+  {{!-- <link rel="stylesheet" href="style.css"> --}}
+  <style>
+    /* Style the body element */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Style the header element */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the main content area */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Style the footer element */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+  </style>
+  
 </head>
 <body>
   <header>
@@ -15,6 +85,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      
     </ul>
   </nav>
   
@@ -32,6 +103,8 @@
   
   <footer>
     <p>&copy; 2023 My Home Page</p>
+    <p><a href="/logout">logout</a></p>
+    
   </footer>
 </body>
 </html>

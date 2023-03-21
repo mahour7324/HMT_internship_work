@@ -48,6 +48,9 @@ app.get("/view", (req, resp) => {
 app.get("/login_register", (req, resp) => {
     resp.render("login_register")
 })
+app.get("/logout", (req, resp) => {
+    resp.render("login_register")
+})
 
 
 
@@ -75,17 +78,19 @@ app.get("/login", (req, resp) => {
             throw err;
         } else {
             if (result[0] == null) {
-                resp.send('<h1>Wrong email or Username</h1>')
+                // user not found
+                resp.render("login_register",{ mesg: true})
             }
             else{
                 const saved_password = result[0].password
                 // console.log(saved_password==password)
                 
                 if(password==saved_password){
-                    resp.send('<h1>Now you are logged in</h1>')
+                    resp.render("homepage")
                 }
                 else{
-                    resp.send("<h1>Wrong email or Username</h1>")
+                    // password is wrong
+                    resp.render("login_register",{mesg1:true})
                 }
 
             }
@@ -111,12 +116,13 @@ app.get("/register", (req, resp) => {
                 if (err) {
                     throw err;
                 } else {
-                    resp.send(`<h1>Welcome ${username} now you are registered</h1>`);
+                    resp.send(`<h1>Welcome ${username} you are registered successfully go back to login</h1>`);
                 }
             });
         }
         else{
-            resp.send('<h1>Username already exist</h1>')
+            //Username already exist
+            resp.render("login_register",{mesg2:true})
         }
 
 
