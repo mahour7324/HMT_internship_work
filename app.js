@@ -82,7 +82,7 @@ app.get("/login", (req, resp) => {
                 // console.log(saved_password==password)
                 
                 if(password==saved_password){
-                    resp.send('<h1>now you are logged in</h1>')
+                    resp.send('<h1>Now you are logged in</h1>')
                 }
                 else{
                     resp.send("<h1>Wrong email or Username</h1>")
@@ -111,12 +111,12 @@ app.get("/register", (req, resp) => {
                 if (err) {
                     throw err;
                 } else {
-                    resp.send(`welcome ${username} now you are registered`);
+                    resp.send(`<h1>Welcome ${username} now you are registered</h1>`);
                 }
             });
         }
         else{
-            resp.send('user already exist')
+            resp.send('<h1>Username already exist</h1>')
         }
 
 
