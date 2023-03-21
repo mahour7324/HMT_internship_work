@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login and Register Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      
+      form {
+        width: 50%;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+      
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      span {
+        float: right;
+        padding-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login" >
+      <h2>Login</h2>
+      <div class="container">
+        <label for="username"><b>Username or Email</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="submit" value="Login">
+      </div>
+    </form>
+    <form action="/register" >
+      <h2>Register</h2>
+      <div class="container">
+        <label for="fullname"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" name="fullname" required>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </body>
+</html>
