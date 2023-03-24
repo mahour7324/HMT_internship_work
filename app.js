@@ -15,7 +15,7 @@ const con = mysql.createConnection({
 
 con.connect(function (err) {
     if (err) throw err;
-    console.log("Connected!=>from app.js");
+    console.log("Connected!");
 });
 //-----------------------------------------------------------------------------------------------------------------------
 
@@ -92,15 +92,19 @@ app.get("/login", (req, resp) => {
                     // password is wrong
                     resp.render("login_register",{mesg1:true})
                 }
-
             }
-
-
-
         }
     });
-
 })
+
+
+
+
+
+
+
+
+
 //-----register----------------------------------------------------------------------------------------------------------
 
 app.get("/register", (req, resp) => {
@@ -169,6 +173,6 @@ app.get("/register", (req, resp) => {
 app.listen(port, (err) => {
     if (err) { throw err }
     else {
-        console.log(`server is started on port ${port}`)
+        console.log(`connection on =>localhost:3000 `)
     }
 })
