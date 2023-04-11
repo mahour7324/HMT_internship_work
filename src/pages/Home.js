@@ -6,7 +6,7 @@ import orangeBall from "../../src/pages/assets/images/objects/orange-ball.png";
 import sparkleLight from "../../src/pages/assets/images/objects/sparkle-light.png";
 import violetBallBlur from "../../src/pages/assets/images/objects/violet-ball-blur.png";
 import violetBall from "../../src/pages/assets/images/objects/violet-ball.png";
-// import {} from   '../../src/pages/assets/css/'
+import    "../"
 
 const Home = () => {
   return (
@@ -81,7 +81,8 @@ const Home = () => {
         </div>
 
         {/* <!-- User search modal --> */}
-        <div
+  {/* |-------------------------------------------------------------------------------------------| */}
+        {/* <div
           id="uni_search_modal"
           className="uk-modal-full uk-modal"
           data-uk-modal=""
@@ -93,7 +94,7 @@ const Home = () => {
             >
               <i data-feather="x"></i>
             </button>
-            <div className="uk-container uk-container-xsmall">
+            <div className="container">
               <div
                 className="uk-section-2xlarge uk-width-2xlarge@m uk-margin-auto"
                 data-uk-height-viewport=""
@@ -136,7 +137,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+  {/* |-------------------------------------------------------------------------------------------| */}
 
         <div className="wrap">
           <div
@@ -151,6 +153,7 @@ const Home = () => {
               <div
                 className="uk-position-top uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
+                style={{textAlign:"center"}}
               >
                 <img
                   className="uk-position-top uk-blur-large"
@@ -160,7 +163,7 @@ const Home = () => {
                   alt="Circle"
                 />
               </div>
-              <div className="uk-container">
+              <div className="container">
                 <div
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
                   data-uk-height-viewport="offset-bottom: 30;"
@@ -225,7 +228,7 @@ const Home = () => {
                     alt="object"
                     style={{ bottom: "30%", right: "24%" }}
                   />
-                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index">
+                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index" style={{textAlign:"center"}}>
                     <img
                       className="uk-visible@m"
                       width="100"
@@ -258,6 +261,7 @@ const Home = () => {
                       href="main/#demos"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top uk-margin-medium-top@m"
                       data-uk-scroll=""
+                      style={{borderBottom:"double"}}
                     >
                       Live Preview
                     </a>
@@ -265,19 +269,21 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
+            <div className="bar" style={{textAlign:"center"}}>
             <img
               className="uk-width-2xsmall uk-flex-center uk-margin-auto"
               src="assets/images/divider-01.svg"
               alt="Divider"
+              
             />
+            </div>
 
             {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
             <div
               id="demos"
               className="uk-panel uk-section-large uk-section-xlarge@m uk-padding-small-top@m uk-overflow-hidden"
             >
-              <div className="uk-container">
+              <div className="container">
                 <div
                   className="uk-grid-xsmall uk-grid-xlarge@m uk-child-width-1-3@m uk-text-center uk-margin-medium-top uk-margin-xlarge-top@s uk-grid"
                   data-uk-grid="masonry: true;"
@@ -285,7 +291,7 @@ const Home = () => {
                   <div className="row">
                     <div className="col-lg-4">
                       <div>
-                        <div className="uk-panel">
+                        <div className="uk-panel" style={{marginBottom:"30px"}} >
                           <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
                             <div className="image-box">
                               <img
@@ -431,15 +437,15 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                          <div className="image-box">
-                            <img
-                              src="assets/images/demo/soon.png"
-                              alt="Upcoming Pages"
-                              width="580"
-                              height="318"
-                              className="uk-width-1-1 uk-radius-medium"
-                              loading="lazy"
-                            />{" "}
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/soon.png"
+                                alt="Upcoming Pages"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />{" "}
                             </div>
                             <a
                               href="#"
@@ -458,13 +464,14 @@ const Home = () => {
               </div>
             </div>
             {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
-
+            <div className="bar" style={{textAlign:"center"}}>
             <img
               className="uk-width-2xsmall uk-flex-center uk-margin-auto"
               src="assets/images/divider-01.svg"
               alt="Divider"
+              
             />
-
+            </div>
             {/* <!-- Footer --> */}
             <div
               id="footer"
@@ -473,6 +480,7 @@ const Home = () => {
               <div
                 className="uk-position-bottom uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
+                style={{textAlign:"center"}}
               >
                 <img
                   className="uk-position-bottom uk-blur-large"
@@ -482,7 +490,7 @@ const Home = () => {
                   alt="Circle"
                 />
               </div>
-              <div className="uk-container">
+              <div className="container">
                 <div
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
                   data-uk-height-viewport="offset-bottom: 30; media: @m;"
@@ -533,7 +541,7 @@ const Home = () => {
                     alt="object"
                     style={{ bottom: "30%", right: "24%" }}
                   />
-                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index">
+                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index" style={{textAlign:"center"}}>
                     <span className="uk-text-overline uk-text-bold uk-text-gradient">
                       Purchase Theme
                     </span>
@@ -545,6 +553,7 @@ const Home = () => {
                       href="https://themeforest.net/item/nerko-react-gatsby-nft-portfolio-template/43703850"
                       target="_blank"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
+                      style={{borderBottom:"double"}}
                     >
                       <i className="uk-icon unicon-shopping-bag"></i>
                       <span>Buy now</span>
