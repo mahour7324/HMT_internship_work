@@ -1,20 +1,80 @@
 <!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-40 uk-dark"></html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+      <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+      <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerko React Gatsby Template</title>
+    <meta name="description" content="description...">
+    <meta name="theme-color" content="#741ff5">
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- preload head styles -->
+
+    <link rel="stylesheet" href="../src/pages/assets/css/theme/main.min.css" />
+   
+            <link rel="preload" href="assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin="">
+            <link rel="preload" href="assets/fonts/unicons/Unicons.woff?lkolxg" as="font" type="font/woff" crossorigin="">
+            <link rel="preload" href="../../npm/swiper%408.3.2/swiper-bundle.min.css" as="style">
+            <link rel="preload" href="../../npm/uikit%403.15.1/dist/css/uikit.min.css" as="style">
+    
+            <!-- <link rel="preload" href="assets/css/theme/main.min.css" as="style"> -->
+    
+            <!-- preload footer scripts -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+            <link rel="preload" href="assets/js/uikit.min.js" as="script">
+            <link rel="preload" href="assets/js/uikit-components.js" as="script">
+            <link rel="preload" href="assets/js/jquery.min.js" as="script">
+            <link rel="preload" href="assets/js/swiper-bundle.min.js" as="script">
+            <link rel="preload" href="assets/js/feather.min.js" as="script">
+            <link rel="preload" href="assets/js/typed.min.js" as="script">
+            <link rel="preload" href="assets/js/anime.min.js" as="script">
+            <link rel="preload" href="assets/js/app.js" as="script">
+            <link rel="preload" href="assets/js/swiper-helper.js" as="script">
+            <link rel="preload" href="assets/js/typed-helper.js" as="script">
+            <link rel="preload" href="assets/js/anime-helper.js" as="script">
+            <link rel="preload" href="assets/js/anime-helper-defined-timelines.js" as="script">
+    
+            <!-- include styles -->
+            <script src="assets/js/app-head.js"></script>
+            <link rel="stylesheet" href="assets/css/theme/main.min.css">
+    
+            <!-- include scripts -->
+            <script src="assets/js/uikit.min.js"></script>
+            <script src="assets/js/uikit-components.js"></script>
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -49,6 +109,29 @@
       
       <!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script defer="" src="assets/js/jquery.min.js"></script>
+      <script defer="" src="assets/js/swiper-bundle.min.js"></script>
+      <script defer="" src="assets/js/feather.min.js"></script>
+      <script defer="" src="assets/js/typed.min.js"></script>
+      <script defer="" src="assets/js/anime.min.js"></script>
+      <script defer="" src="assets/js/app.js"></script>
+      <script defer="" src="assets/js/swiper-helper.js"></script>
+      <script defer="" src="assets/js/typed-helper.js"></script>
+      <script defer="" src="assets/js/anime-helper.js"></script>
+      <script defer="" src="assets/js/anime-helper-defined-timelines.js"></script>
+      <script>
+          // Schema toggle via URL
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const getSchema = urlParams.get("schema");
+          if (getSchema === "dark") {
+              document.documentElement.classList.add("uk-dark");
+              localStorage.setItem("darkMode", "1");
+          } else if (getSchema === "light") {
+              document.documentElement.classList.remove("uk-dark");
+              localStorage.setItem("darkMode", "0");
+          }
+      </script>
   </body>
 </html>

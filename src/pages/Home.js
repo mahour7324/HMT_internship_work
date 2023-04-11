@@ -1,13 +1,17 @@
 import { getDefaultNormalizer } from "@testing-library/react";
 import React from "react";
 import { link } from "react-router-dom";
+import orangeBallBlur from "../../src/pages/assets/images/objects/orange-ball-blur.png";
+import orangeBall from "../../src/pages/assets/images/objects/orange-ball.png";
+import sparkleLight from "../../src/pages/assets/images/objects/sparkle-light.png";
+import violetBallBlur from "../../src/pages/assets/images/objects/violet-ball-blur.png";
+import violetBall from "../../src/pages/assets/images/objects/violet-ball.png";
+// import {} from   '../../src/pages/assets/css/'
 
 const Home = () => {
   return (
     <>
       <div>
-        {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
-
         <div
           id="uni_mobile_menu"
           className="uni-mobile-menu uk-offcanvas"
@@ -150,7 +154,7 @@ const Home = () => {
               >
                 <img
                   className="uk-position-top uk-blur-large"
-                  style={{left: "25%", top: "-80%"}}
+                  style={{ left: "25%", top: "-80%" }}
                   width="700"
                   src="assets/images/gradient-circle.svg"
                   alt="Circle"
@@ -164,63 +168,62 @@ const Home = () => {
                   <img
                     className="uk-position-top-left uni-animation-spin uk-visible@m"
                     width="40"
-                    src="assets/images/objects/sparkle-light.png"
+                    src={sparkleLight}
                     alt="object"
-                    style={{top: "45%",left: "30%"}}
-                    
+                    style={{ top: "45%", left: "30%" }}
                   />
                   <img
                     className="uk-position-top-right uni-animation-spin uk-visible@m"
                     width="40"
-                    src="assets/images/objects/sparkle-light.png"
+                    src={sparkleLight}
                     alt="object"
-                    style={{top: "35%" ,right: "30%"}}
+                    style={{ top: "35%", right: "30%" }}
                   />
                   <img
                     className="uk-position-top-left uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="24"
-                    src="assets/images/objects/orange-ball-blur.png"
+                    src={orangeBallBlur}
                     alt="object"
-                    style={{top: "16%" ,left: "24%"}}
+                    style={{ top: "16%", left: "24%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-left uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
-                    src="assets/images/objects/violet-ball.png"
+                    src={violetBall}
                     alt="object"
-                    style={{top: "34%" ,left: "16%"}}
+                    style={{ top: "34%", left: "16%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-bottom-left uni-animation-bounce uk-visible@m"
                     width="24"
-                    src="assets/images/objects/orange-ball.png"
+                    src={orangeBall}
                     alt="object"
-                    style={{bottom: "30%" ,left: "24%"}}
+                    style={{ bottom: "30%", left: "24%" }}
                   />
                   <img
                     className="uk-position-top-right uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="36"
-                    src="assets/images/objects/violet-ball.png"
+                    src={violetBall}
                     alt="object"
-                    style={{top: "16%" ,right: "24%"}}
+                    style={{ top: "16%", right: "24%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-right uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
-                    src="assets/images/objects/orange-ball.png"
+                    src={orangeBall}
                     alt="object"
-                    style={{top: "34%", right: "16%"}}
+                    style={{ top: "34%", right: "16%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-bottom-right uni-animation-bounce uk-visible@m"
                     width="24"
-                    src="assets/images/objects/violet-ball-blur.png"
+                    src={violetBallBlur}
                     alt="object"
-                    style={{bottom: "30%" ,right: "24%"}}
+                    style={{ bottom: "30%", right: "24%" }}
                   />
                   <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index">
                     <img
@@ -269,7 +272,7 @@ const Home = () => {
               alt="Divider"
             />
 
-            {/* <!-- Demos --> */}
+            {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
             <div
               id="demos"
               className="uk-panel uk-section-large uk-section-xlarge@m uk-padding-small-top@m uk-overflow-hidden"
@@ -279,146 +282,182 @@ const Home = () => {
                   className="uk-grid-xsmall uk-grid-xlarge@m uk-child-width-1-3@m uk-text-center uk-margin-medium-top uk-margin-xlarge-top@s uk-grid"
                   data-uk-grid="masonry: true;"
                 >
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/landing_01_light.png"
-                          alt="Landing 01"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />
-                        <a
-                          href="https://nerko-gatsbyjs.vercel.app/"
-                          target="_blank"
-                          className="uk-position-cover"
-                          aria-label="Landing 01"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          Landing 01
-                        </p>
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/landing_01_light.png"
+                                alt="Landing 01"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />
+                            </div>
+                            <a
+                              href="https://nerko-gatsbyjs.vercel.app/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 01"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              Landing 01
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/landing_02_light.png"
+                                alt="Landing 02"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />{" "}
+                            </div>
+                            <a
+                              href="https://nerko-gatsbyjs.vercel.app/home-2/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 02"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              Landing 02
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/*-----------------------------------------------------------------------------------------------------------------------  */}
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/landing_04_light.png"
+                                alt="Landing 03"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />{" "}
+                            </div>
+                            <a
+                              href="https://nerko-gatsbyjs.vercel.app/home-3/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              Landing 03
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/landing_02_light.png"
-                          alt="Landing 02"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />{" "}
-                        <a
-                          href="https://nerko-gatsbyjs.vercel.app/home-2/"
-                          target="_blank"
-                          className="uk-position-cover"
-                          aria-label="Landing 02"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          Landing 02
-                        </p>
+
+                  {/*-----------------------------------------------------------------------------------------------------------------------  */}
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/blog.png"
+                                alt="Landing 03"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />{" "}
+                            </div>
+                            <a
+                              href="https://nerko-gatsbyjs.vercel.app/blog/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              Blog Page
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/landing_04_light.png"
-                          alt="Landing 03"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />{" "}
-                        <a
-                          href="https://nerko-gatsbyjs.vercel.app/home-3/"
-                          target="_blank"
-                          className="uk-position-cover"
-                          aria-label="Landing 03"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          Landing 03
-                        </p>
+
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                            <div className="image-box">
+                              <img
+                                src="assets/images/demo/blog-details.png"
+                                alt="Landing 03"
+                                width="580"
+                                height="318"
+                                className="uk-width-1-1 uk-radius-medium"
+                                loading="lazy"
+                              />{" "}
+                            </div>
+                            <a
+                              href="https://nerko-gatsbyjs.vercel.app/blog-details/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              Blog Single
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/blog.png"
-                          alt="Landing 03"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />{" "}
-                        <a
-                          href="https://nerko-gatsbyjs.vercel.app/blog/"
-                          target="_blank"
-                          className="uk-position-cover"
-                          aria-label="Landing 03"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          Blog Page
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/blog-details.png"
-                          alt="Landing 03"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />{" "}
-                        <a
-                          href="https://nerko-gatsbyjs.vercel.app/blog-details/"
-                          target="_blank"
-                          className="uk-position-cover"
-                          aria-label="Landing 03"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          Blog Single
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="uk-panel">
-                      <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
-                        <img
-                          src="assets/images/demo/soon.png"
-                          alt="Upcoming Pages"
-                          width="580"
-                          height="318"
-                          className="uk-width-1-1 uk-radius-medium"
-                          loading="lazy"
-                        />{" "}
-                        <a
-                          href="#"
-                          className="uk-position-cover"
-                          aria-label="Upcoming Pages"
-                        ></a>
-                        <p className="uk-text-semibold uk-padding-xsmall">
-                          More Demo Coming
-                        </p>
+
+                    <div className="col-lg-4">
+                      <div>
+                        <div className="uk-panel">
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                          <div className="image-box">
+                            <img
+                              src="assets/images/demo/soon.png"
+                              alt="Upcoming Pages"
+                              width="580"
+                              height="318"
+                              className="uk-width-1-1 uk-radius-medium"
+                              loading="lazy"
+                            />{" "}
+                            </div>
+                            <a
+                              href="#"
+                              className="uk-position-cover"
+                              aria-label="Upcoming Pages"
+                            ></a>
+                            <p className="uk-text-semibold uk-padding-xsmall">
+                              More Demo Coming
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
 
             <img
               className="uk-width-2xsmall uk-flex-center uk-margin-auto"
@@ -437,7 +476,7 @@ const Home = () => {
               >
                 <img
                   className="uk-position-bottom uk-blur-large"
-                  style={{left: "25%", bottom: "-80%"}}
+                  style={{ left: "25%", bottom: "-80%" }}
                   width="700"
                   src="assets/images/gradient-circle.svg"
                   alt="Circle"
@@ -451,48 +490,48 @@ const Home = () => {
                   <img
                     className="uk-position-top-left uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="24"
-                    src="assets/images/objects/orange-ball-blur.png"
+                    src={orangeBallBlur}
                     alt="object"
-                    style={{top: "16%" ,left: "24%"}}
+                    style={{ top: "16%", left: "24%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-left uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
-                    src="assets/images/objects/violet-ball.png"
+                    src={violetBall}
                     alt="object"
-                    style={{top: "34%" ,left: "16%"}}
+                    style={{ top: "34%", left: "16%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-bottom-left uni-animation-bounce uk-visible@m"
                     width="24"
-                    src="assets/images/objects/orange-ball.png"
+                    src={orangeBall}
                     alt="object"
-                    style={{bottom: "30%" ,left: "24%"}}
+                    style={{ bottom: "30%", left: "24%" }}
                   />
                   <img
                     className="uk-position-top-right uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="36"
-                    src="assets/images/objects/violet-ball.png"
+                    src={violetBall}
                     alt="object"
-                    style={{top: "16%" ,right: "24%"}}
+                    style={{ top: "16%", right: "24%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-right uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
-                    src="assets/images/objects/orange-ball.png"
+                    src={orangeBall}
                     alt="object"
-                    style={{top: "34%" ,right: "16%"}}
+                    style={{ top: "34%", right: "16%" }}
                     data-uk-svg=""
                   />
                   <img
                     className="uk-position-bottom-right uni-animation-bounce uk-visible@m"
                     width="24"
-                    src="assets/images/objects/violet-ball-blur.png"
+                    src={violetBallBlur}
                     alt="object"
-                    style={{bottom: "30%" ,right: "24%"}}
+                    style={{ bottom: "30%", right: "24%" }}
                   />
                   <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index">
                     <span className="uk-text-overline uk-text-bold uk-text-gradient">
