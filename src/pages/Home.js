@@ -6,7 +6,7 @@ import orangeBall from "../../src/pages/assets/images/objects/orange-ball.png";
 import sparkleLight from "../../src/pages/assets/images/objects/sparkle-light.png";
 import violetBallBlur from "../../src/pages/assets/images/objects/violet-ball-blur.png";
 import violetBall from "../../src/pages/assets/images/objects/violet-ball.png";
-import    "../"
+import "../";
 
 const Home = () => {
   return (
@@ -81,7 +81,7 @@ const Home = () => {
         </div>
 
         {/* <!-- User search modal --> */}
-  {/* |-------------------------------------------------------------------------------------------| */}
+        {/* |-------------------------------------------------------------------------------------------| */}
         {/* <div
           id="uni_search_modal"
           className="uk-modal-full uk-modal"
@@ -138,7 +138,7 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-  {/* |-------------------------------------------------------------------------------------------| */}
+        {/* |-------------------------------------------------------------------------------------------| */}
 
         <div className="wrap">
           <div
@@ -149,11 +149,12 @@ const Home = () => {
             <div
               id="header"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
+              style={{position:"sticky"}}
             >
               <div
                 className="uk-position-top uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
-                style={{textAlign:"center"}}
+                style={{ textAlign: "center" }}
               >
                 <img
                   className="uk-position-top uk-blur-large"
@@ -168,91 +169,115 @@ const Home = () => {
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
                   data-uk-height-viewport="offset-bottom: 30;"
                 >
+                  {/* //---balls and stars-------------------------------------------------------------------------------------------------------------------------- */}
+
                   <img
                     className="uk-position-top-left uni-animation-spin uk-visible@m"
                     width="40"
                     src={sparkleLight}
                     alt="object"
-                    style={{ top: "45%", left: "30%" }}
+                    style={{ position: "absolute", top: "45%", left: "30%" }}
                   />
+
                   <img
                     className="uk-position-top-right uni-animation-spin uk-visible@m"
                     width="40"
                     src={sparkleLight}
                     alt="object"
-                    style={{ top: "35%", right: "30%" }}
+                    style={{ position: "absolute", top: "35%", right: "30%" }}
                   />
+
                   <img
                     className="uk-position-top-left uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="24"
                     src={orangeBallBlur}
                     alt="object"
-                    style={{ top: "16%", left: "24%" }}
+                    style={{ position: "absolute", top: "16%", left: "24%" }}
                     data-uk-svg=""
                   />
+
                   <img
                     className="uk-position-left uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
                     src={violetBall}
                     alt="object"
-                    style={{ top: "34%", left: "16%" }}
+                    style={{ position: "absolute", top: "34%", left: "16%" }}
                     data-uk-svg=""
                   />
+
                   <img
                     className="uk-position-bottom-left uni-animation-bounce uk-visible@m"
                     width="24"
                     src={orangeBall}
                     alt="object"
-                    style={{ bottom: "30%", left: "24%" }}
+                    style={{ position: "absolute", bottom: "30%", left: "24%" }}
                   />
+
                   <img
                     className="uk-position-top-right uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="36"
                     src={violetBall}
                     alt="object"
-                    style={{ top: "16%", right: "24%" }}
+                    style={{ position: "absolute", top: "16%", right: "24%" }}
                     data-uk-svg=""
                   />
+
                   <img
                     className="uk-position-right uni-animation-bounce uni-animation-delay-large uk-visible@m"
                     width="40"
                     src={orangeBall}
                     alt="object"
-                    style={{ top: "34%", right: "16%" }}
+                    style={{ position: "absolute", top: "34%", right: "16%" }}
                     data-uk-svg=""
                   />
+
                   <img
                     className="uk-position-bottom-right uni-animation-bounce uk-visible@m"
                     width="24"
                     src={violetBallBlur}
                     alt="object"
-                    style={{ bottom: "30%", right: "24%" }}
+                    style={{
+                      position: "absolute",
+                      bottom: "30%",
+                      right: "24%",
+                    }}
                   />
-                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index" style={{textAlign:"center"}}>
+                  {/* //---balls and stars-------------------------------------------------------------------------------------------------------------------------- */}
+
+                  <div
+                    className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index"
+                    style={{ textAlign: "center" }}
+                  >
                     <img
                       className="uk-visible@m"
                       width="100"
                       src="assets/images/nerko-icon.svg"
                       alt="Nerko"
                     />
-                    <img
+                    {/* small icon of nerko------------------------------| */}
+                    {/* <img
                       className="uk-hidden@m"
                       width="80"
                       src="assets/images/nerko-icon.svg"
-                      alt="Nerko"
-                    />
-                    <img
-                      className="uk-margin-top uk-visible@m"
-                      width="240"
-                      src="assets/images/nerko-dark.svg"
-                      alt="Nerko"
-                    />
-                    <img
+                      alt="Nerko" 
+                    />*/}
+                    {/* small icon of nerko------------------------------| */}
+                    <div>
+                      <img
+                        className="uk-margin-top uk-visible@m"
+                        width="240"
+                        src="assets/images/nerko-dark.svg"
+                        alt="Nerko"
+                      />
+                    </div>
+                    {/* small name of nerko------------------------------| */}
+                    {/* <img
                       className="uk-margin-top uk-hidden@m"
                       width="160"
                       src="assets/images/nerko-dark.svg"
                       alt="Nerko"
-                    />
+                    /> */}
+                    {/* small name of nerko------------------------------| */}
                     <p className="uk-text-lead uk-margin-top uk-margin-medium-top@m">
                       NFT Portfolio OnePage <br />
                       React Gatsby
@@ -261,7 +286,7 @@ const Home = () => {
                       href="main/#demos"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top uk-margin-medium-top@m"
                       data-uk-scroll=""
-                      style={{borderBottom:"double"}}
+                      style={{ borderBottom: "double" }}
                     >
                       Live Preview
                     </a>
@@ -269,13 +294,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="bar" style={{textAlign:"center"}}>
-            <img
-              className="uk-width-2xsmall uk-flex-center uk-margin-auto"
-              src="assets/images/divider-01.svg"
-              alt="Divider"
-              
-            />
+            <div className="bar" style={{ textAlign: "center" }}>
+              <img
+                className="uk-width-2xsmall uk-flex-center uk-margin-auto"
+                src="assets/images/divider-01.svg"
+                alt="Divider"
+              />
             </div>
 
             {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
@@ -291,7 +315,10 @@ const Home = () => {
                   <div className="row">
                     <div className="col-lg-4">
                       <div>
-                        <div className="uk-panel" style={{marginBottom:"30px"}} >
+                        <div
+                          className="uk-panel"
+                          style={{ marginBottom: "30px" }}
+                        >
                           <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
                             <div className="image-box">
                               <img
@@ -301,6 +328,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />
                             </div>
                             <a
@@ -329,6 +357,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />{" "}
                             </div>
                             <a
@@ -358,6 +387,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />{" "}
                             </div>
                             <a
@@ -389,6 +419,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />{" "}
                             </div>
                             <a
@@ -417,6 +448,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />{" "}
                             </div>
                             <a
@@ -445,6 +477,7 @@ const Home = () => {
                                 height="318"
                                 className="uk-width-1-1 uk-radius-medium"
                                 loading="lazy"
+                                style={{ height: "auto" }}
                               />{" "}
                             </div>
                             <a
@@ -464,23 +497,23 @@ const Home = () => {
               </div>
             </div>
             {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
-            <div className="bar" style={{textAlign:"center"}}>
-            <img
-              className="uk-width-2xsmall uk-flex-center uk-margin-auto"
-              src="assets/images/divider-01.svg"
-              alt="Divider"
-              
-            />
+            <div className="bar" style={{ textAlign: "center" }}>
+              <img
+                className="uk-width-2xsmall uk-flex-center uk-margin-auto"
+                src="assets/images/divider-01.svg"
+                alt="Divider"
+              />
             </div>
             {/* <!-- Footer --> */}
             <div
               id="footer"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
+              style={{position:"sticky"}}
             >
               <div
                 className="uk-position-bottom uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
-                style={{textAlign:"center"}}
+                style={{ textAlign: "center" }}
               >
                 <img
                   className="uk-position-bottom uk-blur-large"
@@ -500,7 +533,7 @@ const Home = () => {
                     width="24"
                     src={orangeBallBlur}
                     alt="object"
-                    style={{ top: "16%", left: "24%" }}
+                    style={{position: "absolute", top: "16%", left: "24%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -508,7 +541,7 @@ const Home = () => {
                     width="40"
                     src={violetBall}
                     alt="object"
-                    style={{ top: "34%", left: "16%" }}
+                    style={{position: "absolute", top: "34%", left: "16%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -516,14 +549,14 @@ const Home = () => {
                     width="24"
                     src={orangeBall}
                     alt="object"
-                    style={{ bottom: "30%", left: "24%" }}
+                    style={{position: "absolute", bottom: "30%", left: "24%" }}
                   />
                   <img
                     className="uk-position-top-right uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="36"
                     src={violetBall}
                     alt="object"
-                    style={{ top: "16%", right: "24%" }}
+                    style={{position: "absolute", top: "16%", right: "24%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -531,7 +564,7 @@ const Home = () => {
                     width="40"
                     src={orangeBall}
                     alt="object"
-                    style={{ top: "34%", right: "16%" }}
+                    style={{position: "absolute", top: "34%", right: "16%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -539,9 +572,12 @@ const Home = () => {
                     width="24"
                     src={violetBallBlur}
                     alt="object"
-                    style={{ bottom: "30%", right: "24%" }}
+                    style={{position: "absolute", bottom: "30%", right: "24%" }}
                   />
-                  <div className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index" style={{textAlign:"center"}}>
+                  <div
+                    className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index"
+                    style={{ textAlign: "center" }}
+                  >
                     <span className="uk-text-overline uk-text-bold uk-text-gradient">
                       Purchase Theme
                     </span>
@@ -553,7 +589,7 @@ const Home = () => {
                       href="https://themeforest.net/item/nerko-react-gatsby-nft-portfolio-template/43703850"
                       target="_blank"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
-                      style={{borderBottom:"double"}}
+                      style={{ borderBottom: "double" }}
                     >
                       <i className="uk-icon unicon-shopping-bag"></i>
                       <span>Buy now</span>
