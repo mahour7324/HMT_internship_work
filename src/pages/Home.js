@@ -149,21 +149,21 @@ const Home = () => {
             <div
               id="header"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
-              style={{position:"sticky"}}
+              style={{ position: "sticky" }}
             >
-              <div
+              {/* <div
                 className="uk-position-top uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
                 style={{ textAlign: "center" }}
-              >
+              > */}
                 <img
                   className="uk-position-top uk-blur-large"
-                  style={{ left: "25%", top: "-80%" }}
+                  style={{ left: "25%", top: "-100%" ,position:"absolute",zIndex:"-1",mixBlendMode:"hard-light"}}
                   width="700"
                   src="assets/images/gradient-circle.svg"
                   alt="Circle"
                 />
-              </div>
+              {/* </div> */}
               <div className="container">
                 <div
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
@@ -286,7 +286,7 @@ const Home = () => {
                       href="main/#demos"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top uk-margin-medium-top@m"
                       data-uk-scroll=""
-                      style={{ borderBottom: "double" }}
+                      style={{ padding:"32px 40px" , fontSize:"18px" }}
                     >
                       Live Preview
                     </a>
@@ -317,9 +317,15 @@ const Home = () => {
                       <div>
                         <div
                           className="uk-panel"
-                          style={{ marginBottom: "30px" }}
-                        >
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                          
+                        ><a
+                              href="https://nerko-gatsbyjs.vercel.app/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 01"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/landing_01_light.png"
@@ -331,16 +337,12 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />
                             </div>
-                            <a
-                              href="https://nerko-gatsbyjs.vercel.app/"
-                              target="_blank"
-                              className="uk-position-cover"
-                              aria-label="Landing 01"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               Landing 01
                             </p>
                           </div>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -348,7 +350,14 @@ const Home = () => {
                     <div className="col-lg-4">
                       <div>
                         <div className="uk-panel">
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                        <a
+                              href="https://nerko-gatsbyjs.vercel.app/home-2/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 02"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/landing_02_light.png"
@@ -360,16 +369,11 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />{" "}
                             </div>
-                            <a
-                              href="https://nerko-gatsbyjs.vercel.app/home-2/"
-                              target="_blank"
-                              className="uk-position-cover"
-                              aria-label="Landing 02"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               Landing 02
                             </p>
                           </div>
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -378,7 +382,14 @@ const Home = () => {
                     <div className="col-lg-4">
                       <div>
                         <div className="uk-panel">
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                        <a
+                              href="https://nerko-gatsbyjs.vercel.app/home-3/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/landing_04_light.png"
@@ -390,16 +401,11 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />{" "}
                             </div>
-                            <a
-                              href="https://nerko-gatsbyjs.vercel.app/home-3/"
-                              target="_blank"
-                              className="uk-position-cover"
-                              aria-label="Landing 03"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               Landing 03
                             </p>
                           </div>
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -410,7 +416,14 @@ const Home = () => {
                     <div className="col-lg-4">
                       <div>
                         <div className="uk-panel">
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                        <a
+                              href="https://nerko-gatsbyjs.vercel.app/blog/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/blog.png"
@@ -422,16 +435,11 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />{" "}
                             </div>
-                            <a
-                              href="https://nerko-gatsbyjs.vercel.app/blog/"
-                              target="_blank"
-                              className="uk-position-cover"
-                              aria-label="Landing 03"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               Blog Page
                             </p>
                           </div>
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -439,7 +447,14 @@ const Home = () => {
                     <div className="col-lg-4">
                       <div>
                         <div className="uk-panel">
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                        <a
+                              href="https://nerko-gatsbyjs.vercel.app/blog-details/"
+                              target="_blank"
+                              className="uk-position-cover"
+                              aria-label="Landing 03"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/blog-details.png"
@@ -451,16 +466,11 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />{" "}
                             </div>
-                            <a
-                              href="https://nerko-gatsbyjs.vercel.app/blog-details/"
-                              target="_blank"
-                              className="uk-position-cover"
-                              aria-label="Landing 03"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               Blog Single
                             </p>
                           </div>
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -468,7 +478,13 @@ const Home = () => {
                     <div className="col-lg-4">
                       <div>
                         <div className="uk-panel">
-                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80">
+                        <a
+                              href="#"
+                              className="uk-position-cover"
+                              aria-label="Upcoming Pages"
+                              style={{textDecoration:"none"}}
+                            >
+                          <div className="uk-panel uk-card uk-card-xsmall uk-radius-large uk-box-shadow-xsmall uk-box-shadow-hover-large uk-overflow-hidden uk-background-gray-80" style={{ marginBottom: "30px" }}>
                             <div className="image-box">
                               <img
                                 src="assets/images/demo/soon.png"
@@ -480,15 +496,11 @@ const Home = () => {
                                 style={{ height: "auto" }}
                               />{" "}
                             </div>
-                            <a
-                              href="#"
-                              className="uk-position-cover"
-                              aria-label="Upcoming Pages"
-                            ></a>
-                            <p className="uk-text-semibold uk-padding-xsmall">
+                            <p className="uk-text-semibold uk-padding-xsmall" style={{textAlign:"center"}}>
                               More Demo Coming
                             </p>
                           </div>
+                            </a>
                         </div>
                       </div>
                     </div>
@@ -508,21 +520,21 @@ const Home = () => {
             <div
               id="footer"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
-              style={{position:"sticky"}}
+              style={{ position: "sticky",overflow:"hidden" }}
             >
-              <div
+              {/* <div
                 className="uk-position-bottom uk-position-z-index-negative uk-blend-hard-light"
                 data-uk-height-viewport=""
-                style={{ textAlign: "center" }}
-              >
+                style={{  }}
+              > */}
                 <img
                   className="uk-position-bottom uk-blur-large"
-                  style={{ left: "25%", bottom: "-80%" }}
+                  style={{ left:"25%", bottom:"-150px",position:"absolute",zIndex:"-1",height:"343px" , mixBlendMode:"hard-light" }}
                   width="700"
                   src="assets/images/gradient-circle.svg"
                   alt="Circle"
                 />
-              </div>
+              {/* </div> */}
               <div className="container">
                 <div
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
@@ -533,7 +545,7 @@ const Home = () => {
                     width="24"
                     src={orangeBallBlur}
                     alt="object"
-                    style={{position: "absolute", top: "16%", left: "24%" }}
+                    style={{ position: "absolute", top: "16%", left: "24%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -541,7 +553,7 @@ const Home = () => {
                     width="40"
                     src={violetBall}
                     alt="object"
-                    style={{position: "absolute", top: "34%", left: "16%" }}
+                    style={{ position: "absolute", top: "34%", left: "16%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -549,14 +561,14 @@ const Home = () => {
                     width="24"
                     src={orangeBall}
                     alt="object"
-                    style={{position: "absolute", bottom: "30%", left: "24%" }}
+                    style={{ position: "absolute", bottom: "30%", left: "24%" }}
                   />
                   <img
                     className="uk-position-top-right uni-animation-bounce uni-animation-delay-small uk-visible@m"
                     width="36"
                     src={violetBall}
                     alt="object"
-                    style={{position: "absolute", top: "16%", right: "24%" }}
+                    style={{ position: "absolute", top: "16%", right: "24%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -564,7 +576,7 @@ const Home = () => {
                     width="40"
                     src={orangeBall}
                     alt="object"
-                    style={{position: "absolute", top: "34%", right: "16%" }}
+                    style={{ position: "absolute", top: "34%", right: "16%" }}
                     data-uk-svg=""
                   />
                   <img
@@ -572,7 +584,11 @@ const Home = () => {
                     width="24"
                     src={violetBallBlur}
                     alt="object"
-                    style={{position: "absolute", bottom: "30%", right: "24%" }}
+                    style={{
+                      position: "absolute",
+                      bottom: "30%",
+                      right: "24%",
+                    }}
                   />
                   <div
                     className="uk-panel uk-flex-column uk-flex-middle uk-text-center uk-position-z-index"
@@ -589,9 +605,13 @@ const Home = () => {
                       href="https://themeforest.net/item/nerko-react-gatsby-nft-portfolio-template/43703850"
                       target="_blank"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
-                      style={{ borderBottom: "double" }}
+                      // style={{ borderBottom: "double" }}
+                      style={{ padding:"32px 40px", fontSize:"18px"  }}
                     >
-                      <i className="uk-icon unicon-shopping-bag"></i>
+                      {/* <i className="uk-icon unicon-shopping-bag"></i> */}
+                      
+                      {/* <i class="bi bi-bag-heart"></i> */}
+                      
                       <span>Buy now</span>
                     </a>
                   </div>
