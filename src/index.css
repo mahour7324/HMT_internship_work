@@ -14,3 +14,29 @@ code {
 .image-box > img{
   width: 100%;
 }
+
+
+@media only screen and (max-width:767px) {
+ .balls_stars{
+  display: none;
+ }
+ .nerko_icon > img{
+  padding: 10px !important;
+  
+ }
+ .nerko_icon2 > img{
+  width: 156px;
+ }
+ .preview_btn > a{
+  padding: 25px 25px! important;
+  font-size: 15px! important;
+ }.moon > img{
+  display: none !important; 
+ }
+.buy_btn > a{
+  padding: 15px 32px !important;
+  font-size: 15px !important;
+}
+
+
+}
