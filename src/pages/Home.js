@@ -12,133 +12,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <div
-          id="uni_mobile_menu"
-          className="uni-mobile-menu uk-offcanvas"
-          data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;"
-        >
-          <div className="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
-            <div
-              className="uni-mobile-menu-wrap uk-flex-column uk-flex-between"
-              data-uk-height-viewport="offset-bottom: true;"
-            >
-              <div className="uni-mobile-menu-content">
-                <header className="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
-                  <div className="uk-flex-1">
-                    <button
-                      aria-label="Close Menu"
-                      className="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle"
-                      type="button"
-                    >
-                      <i
-                        className="uk-icon-small"
-                        data-feather="arrow-left"
-                      ></i>
-                    </button>
-                  </div>
-                  <div>
-                    <h5 className="uk-h5 uk-text-uppercase uk-margin-remove">
-                      Navigation
-                    </h5>
-                  </div>
-                  <div className="uk-flex-1"></div>
-                </header>
-                <hr className="uk-margin-remove" />
-                <div className="uk-card uk-card-small">
-                  <div className="uk-panel">
-                    <ul className="uk-nav uk-nav-default">
-                      <li className="uk-nav-header">Homepages</li>
-                      <li>
-                        <a href="https://nerko-gatsbyjs.vercel.app/">
-                          Landing 01
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://nerko-gatsbyjs.vercel.app/home-02/">
-                          Landing 02
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://nerko-gatsbyjs.vercel.app/home-03/">
-                          Landing 03
-                        </a>
-                      </li>
-                      <li className="uk-nav-header">Inner pages</li>
-                      <li>
-                        <a href="#">Connect wallet</a>
-                      </li>
-                      <li>
-                        <a href="https://nerko-gatsbyjs.vercel.app/nothing/">
-                          404 page
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* <!-- User search modal --> */}
-        {/* |-------------------------------------------------------------------------------------------| */}
-        {/* <div
-          id="uni_search_modal"
-          className="uk-modal-full uk-modal"
-          data-uk-modal=""
-        >
-          <div className="uk-modal-dialog dark:uk-background-white-5">
-            <button
-              className="uk-modal-close-full uk-position-small dark:uk-text-white"
-              type="button"
-            >
-              <i data-feather="x"></i>
-            </button>
-            <div className="container">
-              <div
-                className="uk-section-2xlarge uk-width-2xlarge@m uk-margin-auto"
-                data-uk-height-viewport=""
-              >
-                <form
-                  className="search-form uk-search uk-search-large uk-width-1-1"
-                  action="./search-ajax.html"
-                  method="get"
-                >
-                  <input
-                    className="uk-search-input uk-text-center uk-border-bottom"
-                    type="search"
-                    name="s"
-                    autoComplete="off"
-                    placeholder="Search item or artist.."
-                  />
-                  <div className="search-results uk-margin-medium-top uk-hidden">
-                    <div className="search-results-content uk-panel uk-hidden"></div>
-                    <div className="search-results-loading uk-flex-center uk-flex-middle uk-height-1-1">
-                      <span
-                        className="uk-flex-center uk-flex-middle"
-                        data-uk-spinner="ratio: .8"
-                      ></span>
-                    </div>
-                  </div>
-                  <noscript>
-                    <button
-                      aria-label="Submit"
-                      type="submit"
-                      className="uk-form-icon uk-form-icon-flip"
-                    >
-                      <i className="uk-icon-xsmall" data-feather="search"></i>
-                    </button>
-                  </noscript>
-                </form>
-                <div className="uk-text-small uk-text-center uk-margin-top uk-margin-large-top@m">
-                  Type your keyword and hit "enter" for search and hit "esc" to
-                  close!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* |-------------------------------------------------------------------------------------------| */}
+        {/* ------------------------------------------------------------------content---------------------------------------------------------------------------------- */}
 
         <div className="wrap">
           <div
@@ -146,33 +20,28 @@ const Home = () => {
             className="uk-background-gray-100 uk-text-white uk-dark"
             style={{ overflow: "hidden" }}
           >
-            {/* <!-- Overview --> */}
+            {/* <!-- Overview ----------------> */}
             <div
               id="header"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
               style={{ position: "sticky" }}
             >
-              {/* <div
-                className="uk-position-top uk-position-z-index-negative uk-blend-hard-light"
-                data-uk-height-viewport=""
-                style={{ textAlign: "center" }}
-              > */}
               <div className="moon">
-              <img
-                className="uk-position-top uk-blur-large"
-                style={{
-                  left: "25%",
-                  top: "-100%",
-                  position: "absolute",
-                  zIndex: "-1",
-                  mixBlendMode: "hard-light",
-                }}
-                width="700"
-                src="assets/images/gradient-circle.svg"
-                alt="Circle"
-              />
+                <img
+                  className="uk-position-top uk-blur-large"
+                  style={{
+                    left: "25%",
+                    top: "-100%",
+                    position: "absolute",
+                    zIndex: "-1",
+                    mixBlendMode: "hard-light",
+                  }}
+                  width="700"
+                  src="assets/images/gradient-circle.svg"
+                  alt="Circle"
+                />
               </div>
-              {/* </div> */}
+
               <div className="container">
                 <div
                   className="uk-section-large uk-section-xlarge@m uk-flex-center uk-flex-middle"
@@ -271,14 +140,6 @@ const Home = () => {
                         alt="Nerko"
                       />
                     </div>
-                    {/* small icon of nerko------------------------------| */}
-                    {/* <img
-                      className="uk-hidden@m"
-                      width="80"
-                      src="assets/images/nerko-icon.svg"
-                      alt="Nerko" 
-                    />*/}
-                    {/* small icon of nerko------------------------------| */}
                     <div className="nerko_icon2">
                       <img
                         className="uk-margin-top uk-visible@m"
@@ -287,27 +148,19 @@ const Home = () => {
                         alt="Nerko"
                       />
                     </div>
-                    {/* small name of nerko------------------------------| */}
-                    {/* <img
-                      className="uk-margin-top uk-hidden@m"
-                      width="160"
-                      src="assets/images/nerko-dark.svg"
-                      alt="Nerko"
-                    /> */}
-                    {/* small name of nerko------------------------------| */}
                     <p className="uk-text-lead uk-margin-top uk-margin-medium-top@m">
                       NFT Portfolio OnePage <br />
                       React Gatsby
                     </p>
                     <div className="preview_btn">
-                    <a
-                      href="#"
-                      className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top uk-margin-medium-top@m"
-                      data-uk-scroll=""
-                      style={{ padding: "32px 40px", fontSize: "18px" }}
-                    >
-                      Live Preview
-                    </a>
+                      <a
+                        href="#"
+                        className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top uk-margin-medium-top@m"
+                        data-uk-scroll=""
+                        style={{ padding: "32px 40px", fontSize: "18px" }}
+                      >
+                        Live Preview
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -556,7 +409,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* <!-- Demos --------------------------------------------------------------------------------------------------------------------> */}
+            {/* <!-- Demos -----------------------------------------------------------------------------------> */}
             <div className="bar" style={{ textAlign: "center" }}>
               <img
                 className="uk-width-2xsmall uk-flex-center uk-margin-auto"
@@ -564,32 +417,27 @@ const Home = () => {
                 alt="Divider"
               />
             </div>
-            {/* <!-- Footer --> */}
+            {/* <!-- Footer--------------------------------------------------------------------------------------- --> */}
             <div
               id="footer"
               className="uk-panel uk-overflow-hidden uk-position-z-index uk-background-gray-100"
               style={{ position: "sticky", overflow: "hidden" }}
             >
-              {/* <div
-                className="uk-position-bottom uk-position-z-index-negative uk-blend-hard-light"
-                data-uk-height-viewport=""
-                style={{  }}
-              > */}
               <div className="moon">
-              <img
-                className="uk-position-bottom uk-blur-large"
-                style={{
-                  left: "25%",
-                  bottom: "-150px",
-                  position: "absolute",
-                  zIndex: "-1",
-                  height: "343px",
-                  mixBlendMode: "hard-light",
-                }}
-                width="700"
-                src="assets/images/gradient-circle.svg"
-                alt="Circle"
-              />
+                <img
+                  className="uk-position-bottom uk-blur-large"
+                  style={{
+                    left: "25%",
+                    bottom: "-150px",
+                    position: "absolute",
+                    zIndex: "-1",
+                    height: "343px",
+                    mixBlendMode: "hard-light",
+                  }}
+                  width="700"
+                  src="assets/images/gradient-circle.svg"
+                  alt="Circle"
+                />
               </div>
               {/* </div> */}
               <div className="container">
@@ -667,18 +515,16 @@ const Home = () => {
                       Buy Nerko now!
                     </h3>
                     <div className="buy_btn">
-                    <a
-                      href="javascript:void(0)"
-                      className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
-                      // style={{ borderBottom: "double" }}
-                      style={{ padding: "32px 40px", fontSize: "18px" }}
-                    >
-                      {/* <i className="uk-icon unicon-shopping-bag"></i> */}
+                      <a
+                        href="javascript:void(0)"
+                        className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
+                        // style={{ borderBottom: "double" }}
+                        style={{ padding: "32px 40px", fontSize: "18px" }}
+                      >
+                        {/* <i className="uk-icon unicon-shopping-bag"></i> */}
 
-                      {/* <i class="bi bi-bag-heart"></i> */}
-
-                      <span>Buy now</span>
-                    </a>
+                        <span>Buy now</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -687,7 +533,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* ---------------------------------------------------------------------------------------------------------------------------------------------------- */}
+        {/* ------------------------------------------------------------------content---------------------------------------------------------------------------------- */}
       </div>
     </>
   );
