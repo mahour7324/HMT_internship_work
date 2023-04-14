@@ -336,8 +336,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="https://nerko-gatsbyjs.vercel.app/"
-                            target="_blank"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Landing 01"
                             style={{ textDecoration: "none" }}
@@ -374,8 +373,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="https://nerko-gatsbyjs.vercel.app/home-2/"
-                            target="_blank"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Landing 02"
                             style={{ textDecoration: "none" }}
@@ -412,8 +410,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="https://nerko-gatsbyjs.vercel.app/home-3/"
-                            target="_blank"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Landing 03"
                             style={{ textDecoration: "none" }}
@@ -452,8 +449,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="https://nerko-gatsbyjs.vercel.app/blog/"
-                            target="_blank"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Landing 03"
                             style={{ textDecoration: "none" }}
@@ -489,8 +485,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="https://nerko-gatsbyjs.vercel.app/blog-details/"
-                            target="_blank"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Landing 03"
                             style={{ textDecoration: "none" }}
@@ -526,7 +521,7 @@ const Home = () => {
                       <div>
                         <div className="uk-panel">
                           <a
-                            href="#"
+                            href="javascript:void(0)"
                             className="uk-position-cover"
                             aria-label="Upcoming Pages"
                             style={{ textDecoration: "none" }}
@@ -673,8 +668,7 @@ const Home = () => {
                     </h3>
                     <div className="buy_btn">
                     <a
-                      href="https://themeforest.net/item/nerko-react-gatsby-nft-portfolio-template/43703850"
-                      target="_blank"
+                      href="javascript:void(0)"
                       className="uk-button uk-button-medium uk-button-large@m uk-button-gradient uk-margin-top"
                       // style={{ borderBottom: "double" }}
                       style={{ padding: "32px 40px", fontSize: "18px" }}
